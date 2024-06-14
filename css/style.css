@@ -18,9 +18,20 @@ body {
     width: 100%;
 }
 
+.intro-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.intro-disc {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #666;
+}
+
 .menu-item {
     background-color: white;
-    margin:10px;
+    margin: 10px;
     border-radius: 10px;
     padding: 10px 20px;
     display: flex;
@@ -28,15 +39,19 @@ body {
     text-decoration: none;
 }
 
-.card-container{
+.card-container {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-.first-item{
+
+.first-item {
     margin-top: 70px;
 }
-.menu-item:hover{
-    background-color:rgba(235, 235, 235, 0.74); ;
+
+.menu-item:hover {
+    background-color: rgba(235, 235, 235, 0.74);
+    ;
 }
 
 .menu-icon {
@@ -48,11 +63,12 @@ body {
     color: black;
 
 }
-.active-menu{
+
+.active-menu {
     background-color: rgba(235, 235, 235, 0.74);
 }
 
-.bottom-navigation-bar{
+.bottom-navigation-bar {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -63,38 +79,39 @@ body {
     justify-content: space-around;
 }
 
-.bottom-navigation-icon{
-    background-color:white;
+.bottom-navigation-icon {
+    background-color: white;
     margin: 5px;
     padding: 5px;
     height: 30px;
     border-radius: 10px;
 }
-.bottom-navigation-icon:hover{
+
+.bottom-navigation-icon:hover {
     background-color: rgba(235, 235, 235, 0.74);
 
 }
 
-.bottom-active-menu{
+.bottom-active-menu {
     background-color: rgba(235, 235, 235, 0.74);
 }
 
 
-.top-heading{
+.top-heading {
     color: white;
     text-align: center;
-    margin:0 0 20px 0;
+    margin: 0 0 20px 0;
     width: 100%;
     padding: 15px;
-    background-color:  rgb(6, 6, 49);
+    background-color: rgb(6, 6, 49);
 }
 
-.home-content{
+.home-content {
     display: flex;
 }
 
-.card{
-    margin:50px 30px 30px 60px;
+.card {
+    margin: 50px 30px 30px 60px;
     height: 350px;
     width: 300px;
     background-color: aliceblue;
@@ -102,27 +119,29 @@ body {
     box-shadow: 1px 1px 20px 2px grey;
     display: inline-block;
 }
-.price{
+
+.price {
     margin-left: 15px;
     font-size: 20px;
 }
 
-.m-img{
+.m-img {
     margin-bottom: 5px;
     height: 180px;
     width: 300px;
     border-radius: 10px 10px 0 0;
 }
-.m-name{
+
+.m-name {
     margin-left: 15px;
     font-size: 17px;
 }
 
-.disc{
+.disc {
     margin-left: 15px;
 }
 
-.btn{
+.btn {
     background-color: black;
     color: white;
     border: none;
@@ -135,31 +154,110 @@ body {
 
 
 @media screen and (max-width: 599px) {
-    .sidebar{
+    .sidebar {
         display: none;
 
-    } 
-  }
+    }
+
+    .intro-heading {
+        font-size: 25px;
+    }
+
+    .intro-disc {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 40px;
+        color: #666;
+    }
+
+}
+
+
 
 @media screen and (min-width: 600px) and (max-width: 768px) {
-    .sidebar{
-        display: none;
-
-    } 
-  }
-
-
-  @media screen and (min-width: 769px) and (max-width: 992px) {
-    .bottom-navigation-bar{
+    .sidebar {
         display: none;
     }
-    
-  }
+
+    .intro-heading {
+        font-size: 30px;
+    }
+
+    .intro-disc {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 40px;
+        color: #666;
+    }
+
+}
 
 
-  @media screen and (min-width: 993px) {
-    .bottom-navigation-bar{
+
+
+@media screen and (min-width: 769px) {
+
+    .intro-heading {
+        font-size: 40px;
+    }
+
+    .intro-disc {
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 40px;
+        color: #666;
+    }
+
+    .card {
+        margin: 50px 30px 30px 60px;
+        height: 450px;
+        width: 300px;
+        background-color: aliceblue;
+        border-radius: 10px;
+        box-shadow: 1px 1px 20px 2px grey;
+        display: inline-block;
+    }
+
+    .m-img {
+        margin-bottom: 20px;
+        height: 180px;
+        width: 300px;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .price {
+        margin-left: 15px;
+        font-size: 30px;
+    }
+
+    .m-name {
+        margin-left: 15px;
+        font-size: 20px;
+    }
+
+    .disc {
+        margin-left: 15px;
+        font-size: 20px;
+    }
+
+    .btn {
+        height: 50px;
+        width: 100px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 15px;
+        padding: 8px;
+        margin: 40px 100px;
+
+    }
+
+    .bottom-navigation-bar {
         display: none;
     }
-    
-  }
+
+
+
+
+
+}
